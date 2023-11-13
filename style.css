@@ -38,5 +38,9 @@ button{
     }
     button{
         width: 100%;
+        margin-bottom: 10px;
+    }
+    .box1, .box2{
+        margin-bottom: 10px;
     }
 }
