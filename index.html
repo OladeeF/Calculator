@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>hello</h1>
+    <input type="text" class="box1"> 
+     <input type="text" class="box2">
+    <button onclick="addNumbers()">addNumbers</button>
+    <input type="text" class="result">
+
+    <script src="script.js"></script>
+    <script>
+
+        function addNumbers(){
+            let box1 = document.querySelector('.box1');
+            let box2 = document.querySelector('.box2');
+            let result = (Number(box1.value) + Number(box2.value));
+            let resultInput = document.querySelector('.result');
+            resultInput.value = result
+
+        }
+        
+    </script>
+    
+</body>
+</html> 
+</body>
+</html>
