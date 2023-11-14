@@ -3,7 +3,11 @@ body{
     margin: 100px auto;
     
 }
-.container{
+h1, h2{
+    text-align: center;
+    color: red;
+}
+.container, .group{
     display: flex;
     justify-content: space-around;
 }
@@ -15,6 +19,13 @@ body{
     padding: 3px 13px;
 
 }
+.container1, .container2{
+    border-radius: 10px;
+    background-color: aquamarine;
+    border: none;
+    height: 30px;
+    padding: 3px 13px;  
+} 
 
 button{
     background-color: blue;
@@ -24,7 +35,7 @@ button{
     width: 150px;
     border-radius: 10px;
 }
-.result{
+.result, .returns{
     border-radius: 10px;
     background-color: #fff;
     border-color: chartreuse;
@@ -36,11 +47,18 @@ button{
         flex-direction:column;
         padding: 10px;
     }
+    .group{
+        flex-direction: column;
+        padding: 10px;
+    }
     button{
         width: 100%;
         margin-bottom: 10px;
     }
     .box1, .box2{
+        margin-bottom: 10px;
+    }
+    .container1, .container2{
         margin-bottom: 10px;
     }
 }

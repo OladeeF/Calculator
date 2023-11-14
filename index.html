@@ -16,6 +16,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>SUBTRACT NUMBER</h1>
+    <div class="group">
+        <input type="text" class="container1"> 
+        <input type="text" class="container2">
+        <button onclick="subtractNumbers()">subtractNumbers</button>
+        <input type="text" class="returns">
+    </div>
+    <h2>ADD NUMBERS</h2>
     <div class="container">
         <input type="text" class="box1"> 
         <input type="text" class="box2">
@@ -32,6 +40,14 @@
             let resultInput = document.querySelector('.result');
             resultInput.value = result
 
+        }
+
+        function subtractNumbers(){
+            let container1 = document.querySelector('.container1');
+            let container2 = document.querySelector('.container2');
+            let returns = (Number(container1.value) - Number(container2.value));
+            let returnInput = document.querySelector('.returns');
+            returnInput.value = returns
         }
         
     </script>
